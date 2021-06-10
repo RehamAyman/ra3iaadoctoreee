@@ -1,0 +1,12 @@
+/* 
+  PhotosUI.strings
+  Pingek
+
+  Created by Kareem Elfadaly on 4/26/20.
+  Copyright © 2020 Engy Bakr. All rights reserved.
+*/
+"ALL_PHOTOS_IN_LIBRARY" = "الاحداث";
+"PXUserCollectionsSectionTitle" = "ألبوماتي";
+"FULL_PHOTOS_GRID_ZOOM_LEVEL_TITLE" = "أحداث";
+"NO_PHOTOS_OR_VIDEOS" = "لا يوجد صور او فيديوهات";
+"EMPTY_ALBUM_LIST_MESSAGE_iPhone" = "يمكنك التقاط الصور او الفيديوهات باستخدام الكاميرا";

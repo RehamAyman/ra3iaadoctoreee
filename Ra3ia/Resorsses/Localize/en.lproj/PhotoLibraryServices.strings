@@ -1,0 +1,10 @@
+/* 
+  PhotoLibraryServices.strings
+  Pingek
+
+  Created by Kareem Elfadaly on 4/26/20.
+  Copyright © 2020 Engy Bakr. All rights reserved.
+*/
+"PHOTOS" = "Photos";
+"CAMERA_ROLL" = "Camera roll";
+"ALL_SCREENSHOTS" = "Screenshots";

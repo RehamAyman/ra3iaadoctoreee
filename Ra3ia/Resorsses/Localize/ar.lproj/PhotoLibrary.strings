@@ -1,0 +1,16 @@
+/* 
+  PhotoLibrary.strings
+  Pingek
+
+  Created by Kareem Elfadaly on 4/26/20.
+  Copyright © 2020 Engy Bakr. All rights reserved.
+*/
+"CANCEL" = "إلغاء";
+"RETAKE" = "إعادة إلتقاط";
+"STREAM_SHARED_BY_ME_SUBTITLE" = "لديك";
+"STREAM_SHARED_BY_SUBTITLE" = "من %@";
+"ALBUM_IMAGE_COUNT_FORMAT" = "%@ الصور";
+"ALBUM_VIDEO_COUNT_FORMAT" = "%@ الفيديوهات";
+"1_ALBUM_PHOTO" = "1 صورة";
+"1_ALBUM_VIDEO" = "1 فيديو";
+"ALBUM_TWO_TYPES_LABEL_COMMAS" = "%@, %@";

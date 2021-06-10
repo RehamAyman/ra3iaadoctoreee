@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Fairuz-Normal.otf">
+            <string>Fairuz-Normal</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" contentMode="center" reuseIdentifier="TypeCell" id="LaB-zB-o78" customClass="TypeCell" customModule="Ra3ia" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="162" height="30"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="qVk-Ox-PMP">
+                <rect key="frame" x="0.0" y="0.0" width="162" height="30"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8E-9C-PFN">
+                        <rect key="frame" x="35" y="6.5" width="117" height="17.5"/>
+                        <fontDescription key="fontDescription" name="Fairuz-Normal" family="Fairuz" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M3s-ui-D6w" customClass="BEMCheckBox">
+                        <rect key="frame" x="5" y="2.5" width="25" height="25"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="9PG-mx-dpY"/>
+                            <constraint firstAttribute="width" constant="25" id="hbw-5M-aUB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onCheckColor">
+                                <color key="value" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onFillColor">
+                                <color key="value" name="BaseColour"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="onTintColor">
+                                <color key="value" name="BaseColour"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" name="BaseColour"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                        <connections>
+                            <action selector="checkBoxAction:" destination="LaB-zB-o78" eventType="valueChanged" id="clR-8f-V4O"/>
+                        </connections>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="o8E-9C-PFN" firstAttribute="centerY" secondItem="M3s-ui-D6w" secondAttribute="centerY" id="01A-u7-Uor"/>
+                    <constraint firstItem="M3s-ui-D6w" firstAttribute="leading" secondItem="qVk-Ox-PMP" secondAttribute="leading" constant="5" id="Olh-e2-k0f"/>
+                    <constraint firstItem="M3s-ui-D6w" firstAttribute="centerY" secondItem="qVk-Ox-PMP" secondAttribute="centerY" id="XOj-1Z-4J6"/>
+                    <constraint firstItem="o8E-9C-PFN" firstAttribute="leading" secondItem="M3s-ui-D6w" secondAttribute="trailing" constant="5" id="flO-e3-9wy"/>
+                    <constraint firstAttribute="trailing" secondItem="o8E-9C-PFN" secondAttribute="trailing" constant="10" id="gQg-CQ-3mV"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="162" height="30"/>
+            <connections>
+                <outlet property="checkBox" destination="M3s-ui-D6w" id="kXm-Sn-8Y1"/>
+                <outlet property="typeLabel" destination="o8E-9C-PFN" id="tSb-iK-Puh"/>
+            </connections>
+            <point key="canvasLocation" x="-173.91304347826087" y="-101.11607142857143"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="BaseColour">
+            <color red="1" green="0.62000000476837158" blue="0.093999996781349182" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

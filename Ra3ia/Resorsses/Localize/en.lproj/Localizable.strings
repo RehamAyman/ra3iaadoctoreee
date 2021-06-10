@@ -1,0 +1,367 @@
+/* 
+  Localizable.strings
+  BeepBeep
+
+  Created by Sara Ashraf on 1/6/19.
+  Copyright © 2019 Sara Ashraf. All rights reserved.
+*/
+
+
+
+
+
+//login screen
+"phone number" = "phone number";
+"Password" = "Password";
+"forget password ?" = "forget password ?";
+"Login" = "Login";
+"create new account ?" = "create new account ?";
+
+"Please enter the correct email format" = "Please enter the correct email format" ;
+"Please enter the correct Mobile Number" = "Please enter the correct Mobile Number" ;
+"The password must be at least 6 characters" = "The password must be at least 6 characters" ;
+"send a treatment" = "send a treatment" ;
+// register screen
+"First name" = "First name";
+"Last name" = "Last name";
+"Email" = "Email";
+"Date of Birth" = "Date of Birth";
+
+
+
+
+
+
+
+ //MARK: - MoreVC
+
+
+"Personal data" = "Personal data" ;
+"language" = "language" ;
+"My clients" = "My clients" ;
+"My recipes" = "My recipes" ;
+"My review" = "My review" ;
+"statistics" = "statistics" ;
+"call us" = "call us" ;
+"Logout" = "Logout" ;
+"Complaints and suggestions" = "Complaints and suggestions" ;
+"About the app" = "About the app" ;
+"Usage Policy" = "Usage Policy" ;
+"personal information" = "personal information" ;
+"Language control" =  "Language control" ;
+"See clients" = "See clients";
+
+"personal information" = "personal information"  ;
+"Language control" = "Language control" ;
+"Review medication prescriptions" = "Review medication prescriptions" ;
+"You can see your overall rating" = "You can see your overall rating" ;
+"You can view the statistics from here" = "You can view the statistics from here" ;
+"Any terms or conditions that are updated in the app" = "Any terms or conditions that are updated in the app" ;
+"Is there a problem ? We will help you solve it" = "Is there a problem ? We will help you solve it" ;
+"Abstract" = "Abstract" ;
+"Send your complaint or suggestion here" = "Send your complaint or suggestion here" ;
+
+
+
+
+
+
+//MARK: -
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+"Account stock" = "Account stock";
+"Mobile Number" = "Mobile Number";
+"Password" = "Password";
+"Forget Password ?" = "Forget Password ?";
+"Login" = "Login";
+"didn't have account? Register" = "didn't have account? Register";
+"Register" = "Register";
+"Last Name" = "Last Name";
+"First Name" = "First Name";
+"Email" = "Email";
+"Address" = "Address";
+"Yes" = "Yes";
+"No" = "No";
+"you have account? Login" = "you have account? Login";
+"Select" = "Select";
+"User" = "User";
+"Provider" = "Provider";
+"Next" = "Next";
+"Account Activation" = "Active Code";
+"Confirmation" = "Confirmation";
+"Return Password" = "Return Password";
+"Edit Password" = "Edit Password";
+"Edit" = "Edit";
+"My Profile" = "My Profile";
+"About" = "About";
+"Frequency Questions" = "Frequency Questions";
+"Countact with Us" = "Countact with Us";
+"Terms and Conditions" = "Terms and Conditions";
+"Complaints and suggestions" = "Complaints and suggestions";
+"Settings" = "Settings";
+"Log Out" = "Log Out";
+"My Orders" = "My Orders";
+"Contact with Us" = "Contact with Us";
+"Add Image" = "Add Image";
+"Email newsletters" = "Email newsletters";
+"Would you like to receive e-mails of offers from here, in addition to information about our experience in the water?" = "Would you like to receive e-mails of offers from here, in addition to information about our experience in the water?";
+"Edit Profile" = "Edit Profile";
+"Currency" = "Currency";
+"Orders in execution" = "Orders in execution";
+"Finished Orders" = "Finished Orders";
+"About" = "About";
+"Title" = "Title";
+"Message details" = "Message details";
+"Send" = "Send";
+"Compliments details" = "Compliments details";
+"Cancel" = "Cancel";
+"Change the language to" = "Change the language to";
+"Are you sure you want log out?" = "Are you sure you want log out?";
+"Log out ?" = "Log out ?";
+"Inquiries" = "Inquiries";
+"All" = "All";
+"Needs to work" = "Needs to work";
+"Current Order" = "Current Order";
+"Archived" = "Archived";
+"Canceled" = "Canceled";
+"Finished" = "Finished";
+"exploration" = "Exploration";
+"Choose the type of trip" = "Choose the type of trip";
+"Popular destinations" = "Popular destinations";
+"Service providers" = "Service providers";
+"Near Trips" = "Near Trips";
+"Find your destination" = "Find your destination";
+"Comments" = "Comments";
+"data" = "data";
+"Book now" = "Book now";
+"The best listings in the world" = "The best listings in the world";
+"details of the trip" = "details of the trip";
+"See the full description" = "See the full description";
+"Captain" = "Captain";
+"owner" = "Owner";
+"Capacitance" = "Capacitance";
+"Boats" = "Boats";
+"Pictures" = "Pictures";
+"Features" = "Features";
+"Location" = "Location";
+"Similar lists" = "Similar lists";
+"Get a special offer with rates and plans" = "Get a special offer with rates and plans";
+"Booking inquiry" = "Booking inquiry";
+"People" = "People";
+"SR" = "SR";
+"person" = "person";
+"Price :" =  "Price :";
+"Send a reservation inquiry" = "Send a reservation inquiry";
+"Well I ask you some questions can the trip owner send you a custom rate, itinerary and more information. No commitment or credit card required" = "Well I ask you some questions can the trip owner send you a custom rate, itinerary and more information. No commitment or credit card required";
+"Next" = "Next";
+"Duration" = "Duration";
+"How long do you want your flight or rental to be?" = "How long do you want your flight or rental to be?";
+"To return the same day" = "To return the same day";
+"minute" = "minute";
+"Number of nights" = "Number of nights";
+"Preferred dates" = "Preferred dates";
+"Please provide at least a preferred date" = "Please provide at least a preferred date";
+"other options" = "other options";
+"If your appointments are listed, you can add two other options that make a final decision" = "If your appointments are listed, you can add two other options that make a final decision";
+"time to leave" = "time to leave";
+"What is your preferred date for departure? You can skip this step if you prefer a suggestion from the owner" = "What is your preferred date for departure? You can skip this step if you prefer a suggestion from the owner";
+"Group size" = "Group size";
+"Adults" = "Adults";
+"Elderly" = "Elderly";
+"Children" = "Children";
+"Infants" = "Infants";
+"any thing else ?" = "any thing else ?";
+"Do you have any special needs or requirements? So that the owner is aware of it .. this is optional" = "Do you have any special needs or requirements? So that the owner is aware of it .. this is optional";
+
+"Email newsletters" = "Email newsletters";
+"Would you like to receive e-mails of offers from here, in addition to information about our experience in the water?" = "Would you like to receive e-mails of offers from here, in addition to information about our experience in the water?";
+"Inquiry sent" = "Inquiry sent";
+"time to leave" = "time to leave";
+"Total :" = "Total :";
+"Done" = "Done";
+"I don't want to book with a captain." = "I don't want to book with a captain.";
+"I want to book with a captain." = "I want to book with a captain.";
+"Ready to book " = "Ready to book ";
+"Date" = "Date";
+"Return" = "Return";
+"Time" = "Time";
+"Discount coupon" = "Discount coupon";
+"Activation" = "Activation";
+"Presented offer" = "Presented offer";
+"Options" = "Options";
+"He will reply to your inquiry shortly" = "He will reply to your inquiry shortly";
+"Cancel of reservation" = "Cancel of reservation";
+"Nights" = "Nights";
+"Adult" = "Adult";
+"old" = "old";
+"Child" = "Child";
+"infant" = "infant";
+"The discount coupon will end at: " = "The discount coupon will end at: ";
+"Send a message" = "Send a message";
+"Cancel Archiving" = "Cancel Archiving";
+"Archive Inquiry"  = "Archive Inquiry" ;
+"Cancel inquiry"  = "Cancel inquiry" ;
+"Support" = "Support";
+"Cancel" =  "Cancel";
+"Write your message here .." = "Write your message here ..";
+"Finally ... do you need a captain?" = "Finally ... do you need a captain?";
+"Yes" = "Yes";
+"No" = "No";
+"Select Time" = "Select Time";
+"Confirmation" = "Confirmation";
+"Cancel" = "Cancel";
+"Select Date" = "Select Date";
+"Skip" = "Skip";
+"Send the inquiry" = "Send the inquiry";
+"Photo from the studio" = "Photo from the studio";
+"Photo from Camera" = "Photo from Camera";
+"Cancel Order" = "Cancel Order";
+"Write down the reason for canceling the order" = "Write down the reason for canceling the order";
+"Add trip" = "Add trip";
+"Trips" = "Trips";
+"Notfications" = "Notfications";
+"Orders" = "Orders";
+"Completed  Orders" = "Completed  Orders";
+"Orders in progress" = "Orders in progress";
+"Home" = "Home";
+"My Orders" = "My Orders";
+"Offers" = "Offers";
+"Wallet" = "Wallet";
+"Comments" = "Comments";
+"About" = "About";
+"Settings" = "Settings";
+"Financial accounts" = "Financial accounts";
+"Name" = "Name";
+"Mobile Number" = "Mobile Number";
+"Address" = "Address";
+"Profile" = "Profile";
+"Commercial Register" = "Commercial Register";
+"Password" = "Password";
+"Change Password" = "Change Password";
+"Save" = "Save";
+"Old Password" = "Old Password";
+"New Password" = "New Password";
+"New Password Confirmation" = "New Password Confirmation";
+"Sr" = "SR";
+"Total commission application" = "Total commission application";
+"Total commission payable" = "Total commission payable";
+"Settle all" = "Settle all";
+"Settle" = "Settle";
+"Your current balance" = "Your current balance";
+"Wallet Shipping" = "Wallet Shipping";
+"About ?" = "About ?";
+"Add a trip" = "Add a trip";
+"Trip Type" = "Trip Type";
+"Trip Name" = "Trip Name";
+"Trip Address" = "Trip Address";
+"Trip destination" = "Trip destination";
+"The main picture of the trip" = "The main picture of the trip";
+"Trip photos" = "Trip photos";
+"Features" = "Features";
+"Description of the trip" = "Description of the trip";
+"Boats" = "Boats";
+"Timings" = "Timings";
+"Determine the duration" = "Determine the duration";
+"Hour price" = "Hour price";
+"Less number of hours" = "Less number of hours";
+"Add" = "Add";
+"Submit an offer" = "Submit an offer";
+"The number of hours" = "The number of hours";
+"Hour" = "Hour";
+"minute" = "minute";
+"Number of minutes" = "Number of minutes";
+"Number of nights" = "Number of nights";
+"night" = "night";
+"Booking date" = "Booking date";
+"Return date" = "Return date";
+"Starting Time" = "Starting Time";
+"Time to return" = "Time to return";
+"Persons" = "Persons";
+"Comment" = "Comment";
+"Total price" = "Total price";
+"Price" = "Price";
+"Delete" = "Delete";
+"Delete Trip" = "Delete Trip";
+"Are you sure you want to delete the trip?" = "Are you sure you want to delete the trip?";
+"Order details" = "Order details";
+"Chat" = "Chat";
+"Cancel Order" = "Cancel Order";
+"Finish Order" = "Finish Order";
+"language settings" = "language settings";
+"Order Number :" = "Order Number :";
+"Night Price" = "Night Price";
+"Less number of hours" = "Less number of hours";
+"Activate notifications" = "Activate notifications";
+"Completed  Orders" = "Completed  Orders" ;
+"This feature is not available now, try again later"  = "This feature is not available now, try again later" ;
+"Please enter all data"  = "Please enter all data" ;
+"Please enter the number of individuals" =  "Please enter the number of individuals" ;
+"You must enter the discount code first." = "You must enter the discount code first";
+"Please enter the reason for cancellation." = "Please enter the reason for cancellation";
+"Please enter the mobile number and password" = "Please enter the mobile number and password" ;
+"The password must be more than 6 characters" = "The password must be more than 6 characters";
+"Please enter a valid mobile number" = "Please enter a valid mobile number";
+"Incorrect email format"  = "Incorrect email format" ;
+"Please enter the activation code!"  = "Please enter the activation code!" ;
+"The password and the confirmation password do not match." = "The password and the confirmation password do not match.";
+"Your account has been banned ... by the administration !!" = "Your account has been banned ... by the administration !!";
+"Your account is not activated yet !!"  = "Your account is not activated yet !!" ;
+"The account has been activated successfully" = "The account has been activated successfully";
+"An activation code will be sent to your mobile number." = "An activation code will be sent to your mobile number.";
+"Image from the camera" = "Image from the camera";
+"Photo from the studio" = "Photo from the studio";
+"Cancel" = "Cancel" ;
+"Are you sure you want to log out?" =  "Are you sure you want to log out?";
+"Log out ?" = "Log out ?";
+"Make sure you are connected to the Internet!"  = "Make sure you are connected to the Internet!" ;
+"I can not locate you 📍" = "I can not locate you 📍";
+"Open Setting" = "Open Setting";
+"Change Currency to..." = "Change Currency to...";
+"Dolar" = "Dolar";
+"Edit Trip" = "Edit Trip";
+"There must be at least one timing" = "There must be at least one timing";
+
+"Add image" = "Add image" ;
+"Send a treatment" = "Send a treatment" ;
+"Finish chat" = "Finish chat" ;
+
+"verification code" = "verification code" ;
+"Confirm new password" = "Confirm new password" ;
+"Edit" = "Edit" ;
+
+"First name" = "First name" ;
+"Retype Password" = "Retype Password" ;
+"Last name" = "Last name" ;
+"Specialization" = "Specialization" ;
+"Type" = "Type" ;
+"have account ? login" = "have account ? login" ;
+"mobile Number" = "mobile Number" ;
+"send verification code successfully .. " = "send verification code successfully .. " ;
+"Activation Code" = "Activation Code" ;
+"Confirm" = "Confirm" ;
+"I didn't receive the code" = "I didn't receive the code" ;
+"You logged in successfully" = "You logged in successfully" ;
+"please make sure to give the client rate .. " = "please make sure to give the client rate .. " ;
+"Are you sure you want to Change Language?" = "Are you sure you want to Change Language?" ;
+"Change Language" = "Change Language" ;
+
+  "Add image From camera " =  "Add image From camera " ;
+  "Add image From the studio" = "Add image From the studio" ;
+"password and confirm password must match" = "password and confirm password must match" ;
+"home" = "home" ;
+"Messages" = "Messages" ;
+"More" = "More";

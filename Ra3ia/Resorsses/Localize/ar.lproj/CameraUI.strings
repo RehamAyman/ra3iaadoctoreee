@@ -1,0 +1,15 @@
+/* 
+  CameraUI.strings
+  Pingek
+
+  Created by Kareem Elfadaly on 4/26/20.
+  Copyright © 2020 Engy Bakr. All rights reserved.
+*/
+"PHOTO" = "الصورة";
+"AEAF_LOCK_TEXT" = "AE/AF LOCK";
+"API_CANCEL_TITLE" = "إلغاء";
+"HDR_AUTO" = "تلقائي";
+"HDR_ON" = "مفعل";
+"HDR_OFF" = "منطفئ";
+"TIMER_OFF_TEXT" = "منطفئ";
+"USE_PHOTO" = "استخدم الصورة";
