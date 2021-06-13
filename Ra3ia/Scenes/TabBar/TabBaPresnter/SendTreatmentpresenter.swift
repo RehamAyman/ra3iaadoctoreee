@@ -18,6 +18,7 @@ protocol SendTreatmentView : class {
     func hideIndicator()
     func showError(error:String)
     func SetAnmilData(AnmilsArray:[anmil])
+   
     func SetSelectedTreatmentID(treatmentsArray:[MedisnModel])
     func showSuccessMssge(msg:String)
     func showSuccesssMsg ( msg : String)
@@ -41,6 +42,7 @@ class  SendTreatmentpresenter {
     var selectedTretmentArray = [Int]()
     func viewDidLoad(){
         getAnmils()
+        
     }
     
     func SearchMedisn(text:String){
@@ -87,11 +89,15 @@ class  SendTreatmentpresenter {
                 self.view?.ReloadTableView()
                 
                 self.view?.hideIndicator()
+                
                 let data = value["data"] as! [[String:Any]]
+                
+                
                 for i in data{
                     let MedisinData = MedisnModel().getObject(dicc: i)
                     self.treatmentsSearchArray.append(MedisinData)
                     self.treatmentsArray.append(MedisinData)
+                    
                 }
                 
                 if(self.treatmentsArray.count == 0){
@@ -103,6 +109,9 @@ class  SendTreatmentpresenter {
         }
     
     }
+    
+    
+    
     func UpdatePrescription(id:String,medicines:[Int],deletedmedicines:[Int]){
         view?.showIndicator()
         TabBarinteractor.updatePrescription(id: id, medicines: medicines, deletedmedicines: deletedmedicines).send(DefaultResponse.self){

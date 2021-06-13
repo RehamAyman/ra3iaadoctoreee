@@ -15,6 +15,11 @@ extension PersonalInfoVC : UITableViewDelegate , UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = addTableview.dequeueReusableCell(withIdentifier: "addExperianceCell", for: indexPath) as! addExperianceCell
         presenter.configerExpriceCell(cell: cell, for: indexPath.row)
+        cell.delteAction = {
+       
+            
+            
+        }
         return cell
     }
     

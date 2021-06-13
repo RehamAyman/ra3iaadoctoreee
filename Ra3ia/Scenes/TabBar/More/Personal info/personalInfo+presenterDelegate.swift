@@ -8,6 +8,8 @@
 import UIKit
 import SKActivityIndicatorView
 extension PersonalInfoVC : PersonalInfoView {
+ 
+    
     
     func showSuccess(msg: String) {
     showSuccessAlert(title: "", message: msg)
@@ -30,8 +32,17 @@ extension PersonalInfoVC : PersonalInfoView {
         self.phonNumber.text = personalData.phone
         self.cv.text = personalData.bio
         self.email.text = personalData.email
-        self.ExperianseArray = (personalData.experiences as? [String]) ?? [""]
         
+        
+        
+        
+    
+//
+//        self.ExperianseArray.append(personalData.experiences)
+//
+//
+//
+//
     }
     
     

@@ -50,6 +50,7 @@ extension SendTreatmentVC : SendTreatmentView {
             anmilsName.append(i.name)
             anmilIDArray.append(i.id)
         }
+        
         self.anmilNameArray.append(anmilsName)
     }
    
@@ -57,13 +58,30 @@ extension SendTreatmentVC : SendTreatmentView {
         self.emptyImaage.isHidden = false
         
     }
+    
+    
+    
+    
+    
+    
+    ///////
     func SetSelectedTreatmentID(treatmentsArray: [MedisnModel]) {
         for i in treatmentsArray{
+            
+        
+            
+            
+        
             if(i.isSelected == "true"){
                 self.TretmintSelected.append(Int(i.id) ?? 0)
+                
                 print("😅\(treatmentsArray[0].id)")
             }
+            
+            
         }
+        
+        
         
         if isComeFromChat == true {
             self.presenter.sendTreatment(user_id: self.userId, medicines: self.TretmintSelected, room_id: self.roomId )

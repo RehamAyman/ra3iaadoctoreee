@@ -57,6 +57,9 @@ class  RegisterVCpresenter {
     
     var Specializations = [anmil]()
     var Types = [anmil]()
+    
+    
+    
     var utils = AppUtils.getObject()
     //MARK:- 2 view initionalizer
     

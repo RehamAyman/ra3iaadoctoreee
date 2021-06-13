@@ -10,7 +10,7 @@ import UIKit
 class PersonalInfoVC: UIViewController {
     
     
-    var ExperianseArray = [String]()
+ //   var ExperianseArray = [Experiences]()
     
     var presenter : PersonalInfoVCpresenter!
     //MARK: - OUTLETS
@@ -46,7 +46,7 @@ class PersonalInfoVC: UIViewController {
         
         print("========= personal array ")
         
-        print(ExperianseArray)
+      //  print(ExperianseArray)
 
      
     }

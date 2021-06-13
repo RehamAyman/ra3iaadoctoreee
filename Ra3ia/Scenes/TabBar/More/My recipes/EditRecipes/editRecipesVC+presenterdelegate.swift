@@ -11,6 +11,8 @@ import SKActivityIndicatorView
 
 
 extension EditRecVC :editRecipesView {
+  
+    
     func UpdateTable() {
         self.tableview.reloadData()
         self.tableview.beginUpdates()
@@ -22,7 +24,22 @@ extension EditRecVC :editRecipesView {
         self.numberOdProuduct.text =  "Number of products :".localized + " " + String(singlePrescription.totalQty)
         self.orderDate.text =   "Order Date :".localized + " " + singlePrescription.createdAt
         self.orderCost.text = "Order Cost :".localized + singlePrescription.totalPrice + " " + "SR".localized
+        //self.allMedicen.append(singlePrescription.medicines)
+        
     }
+    
+    func setALLmedicenInprescription(medicien: [Medicine]) {
+        var medName = [String]()
+        for i in medicien{
+            medName.append(i.name)
+            allMedicenId.append(i.id)
+        }
+        self.allmedicenName.append(medName  )
+
+    }
+
+    
+    
      func showIndicator() {
         SKActivityIndicator.show()
     }

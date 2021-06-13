@@ -42,8 +42,20 @@ extension ChatViewController:ChatView
         let action1 = PopMenuDefaultAction(title: "Add image".localized, image: UIImage(named: "eye")) { (acion) in
            // manager.popMenuShouldDismissOnSelection = true
             
+          
+            
             self.dismiss(animated: true, completion: nil)
-            self.AddImageAlert()
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3 ){
+                
+                
+                self.AddImageAlert()
+                
+                
+                }
+            
+           
+          
             
             }
      
@@ -51,17 +63,23 @@ extension ChatViewController:ChatView
         // send tratment
         let action2 = PopMenuDefaultAction(title: "Send a treatment".localized , image: UIImage(named: "attach")) { (action) in
              
-            
-            self.dismissKeyboard()
-            self.optionView.isHidden = true
-            let vc = Storyboard.Main.viewController(SendTreatmentVC.self)
-            
-            vc.userId = self.reciverId
-            vc.roomId = self.roomID
-            vc.isComeFromChat = true
-            vc.isComeFromMore = false
+            DispatchQueue.main.asyncAfter(deadline: .now() + 0.3 ){
+                
+                
+              
+                self.dismissKeyboard()
+                self.optionView.isHidden = true
+                let vc = Storyboard.Main.viewController(SendTreatmentVC.self)
+                
+                vc.userId = self.reciverId
+                vc.roomId = self.roomID
+                vc.isComeFromChat = true
+                vc.isComeFromMore = false
+               
+                self.navigationController?.pushViewController(vc, animated: true)
+                
+                }
            
-            self.navigationController?.pushViewController(vc, animated: true)
             
             
             }

@@ -55,10 +55,7 @@ extension RegisterVC : UICollectionViewDelegate , UICollectionViewDataSource {
                 print(self.selectedSpecId)
             }
           
-            
-            
-            
-            
+          
            
             return celll
             

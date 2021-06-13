@@ -32,13 +32,6 @@ func showWarningAlert(title:String,message:String){
 
 
 func showNoInterNetAlert(){
-//    let statusAlert = StatusAlert()
-//
-//    statusAlert.image = #imageLiteral(resourceName: "cloud")
-//    statusAlert.title = ""
-//    statusAlert.message =  "Make sure you are connected to the Internet!" .localized
-//    statusAlert.canBePickedOrDismissed = true
-//
-//    // Presenting created instance
-//    statusAlert.showInKeyWindow()
+
+    SPAlert.present(title: "please make sure you are connected to the internet".localized, preset: .error)
 }

@@ -21,6 +21,13 @@ class EditRecVC : UIViewController, setSelectedTretmintID  {
     
     var Newmedicines = [Int]()
     
+    
+    
+    var allMedicenId = [Int]()
+    var allmedicenName =  [[String]]()
+    
+    
+    
    // var selectedMedicien
     
     
@@ -29,6 +36,11 @@ class EditRecVC : UIViewController, setSelectedTretmintID  {
         presenter = editRecipesVCpresenter(view: self)
         SetUpTableview()
         presenter.viewDidLoad(id: self.id)
+        
+        print("=========ALL MEDICIEN ")
+        
+        print(allMedicenId)
+        print(allmedicenName)
     }
     
     @IBAction func editButton(_ sender: UIButton) {

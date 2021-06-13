@@ -20,6 +20,7 @@ protocol editRecipesView : class {
     func DeleteFromTabele(productID:Int)
     func showSuccessMssge(msg:String)
     func UpdateTable()
+    func setALLmedicenInprescription (medicien : [Medicine])
 }
 
 // cells
@@ -77,6 +78,7 @@ class  editRecipesVCpresenter {
             case .failure(let error):
                 print("failure\(String(describing: error))")
             case .success(let value):
+                self.view?.setALLmedicenInprescription(medicien: value.data.medicines)
                 self.products = value.data.medicines
                 self.view?.setSingleRespsData(singlePrescription: value.data)
                 self.view?.fetchingDataSuccess()

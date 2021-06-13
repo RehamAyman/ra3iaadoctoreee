@@ -26,7 +26,14 @@ class SendTreatmentVC: UIViewController , UIActionSheetDelegate {
     //MARK: - VIEWDIDLOAD
     var anmilNameArray = [[String]]()
     var anmilIDArray = [Int]()
+    
+    
+    
     var TretmintSelected = [Int]()
+    var allMediciens = [Int]()
+    
+    
+    
     var anmilSelected = [Int]()
     var delegate:setSelectedTretmintID!
     var presenter : SendTreatmentpresenter!
@@ -41,6 +48,7 @@ class SendTreatmentVC: UIViewController , UIActionSheetDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         print("===================== user id , room id ")
+        print(allMediciens)
         print(userId)
         print(roomId)
     
