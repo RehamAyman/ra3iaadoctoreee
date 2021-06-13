@@ -65,10 +65,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }else{
             GoToAuthntcatonStoryBoard()
         }
+        
+        
+        if(UserDefaults.standard.object(forKey: "FirstRun") == nil){
+            AppLanguage.setAppLanguage(lang: "ar")
+            Localizer.DoTheExhange()
+            self.setAppSemantic()
+            
+        }
 
 
         return true
     }
+    
+    private func setAppSemantic() {
+         
+                UINavigationBar.appearance().semanticContentAttribute = .forceRightToLeft
+
+                UIView.appearance().semanticContentAttribute = .forceRightToLeft
+                UILabel.appearance().semanticContentAttribute = .forceRightToLeft
+                UITextField.appearance().textAlignment = .right
+                UITextView.appearance().textAlignment = .right
+                UITableView.appearance().semanticContentAttribute = .forceRightToLeft
+                UITabBar.appearance().semanticContentAttribute = .forceRightToLeft
+        
+        
+        UserDefaults.standard.set("true", forKey: "FirstRun")
+        }
     
     
     func GoToAuthntcatonStoryBoard(){

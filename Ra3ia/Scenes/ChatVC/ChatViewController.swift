@@ -33,7 +33,8 @@ class ChatViewController: UIViewController ,UITextViewDelegate{
     @IBOutlet weak var userImage: UIImageView!
   
 
- 
+    @IBOutlet weak var chatname: UILabel!
+    
 
     @IBOutlet weak var optionView: UIView!
     @IBOutlet weak var sendButton: UIButton!
@@ -80,7 +81,7 @@ class ChatViewController: UIViewController ,UITextViewDelegate{
     @IBAction func sendAction(_ sender: Any) {
         if(self.textFeild.text.isEmpty == true){
             self.sendButton.backgroundColor = UIColor.red
-            self.sendButton.setImage(#imageLiteral(resourceName: "microphone-black-shape"), for: .normal)
+            self.sendButton.setImage(#imageLiteral(resourceName: "ic_mic_24px"), for: .normal)
             
             UIView.animate(withDuration: 0.6,animations: {
                 self.sendButton.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
@@ -104,7 +105,7 @@ class ChatViewController: UIViewController ,UITextViewDelegate{
          self.sendButton.backgroundColor = UIColor.lightGray.withAlphaComponent(0.35)
          UIView.animate(withDuration: 0.6,animations: {
              self.sendButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
-             self.sendButton.setImage(#imageLiteral(resourceName: "microphone-black-shape"), for: .normal)
+             self.sendButton.setImage(#imageLiteral(resourceName: "send-1"), for: .normal)
             self.sendButton.backgroundColor = UIColor.BasicColor
 
          },completion:nil)
@@ -113,7 +114,7 @@ class ChatViewController: UIViewController ,UITextViewDelegate{
          player?.stop()
         }else{
             Prisnter.sendMessages(message: self.textFeild.text ?? "", type: "text")
-            self.sendButton.setImage(#imageLiteral(resourceName: "microphone-black-shape"), for: .normal)
+            self.sendButton.setImage(#imageLiteral(resourceName: "microphone"), for: .normal)
         }
     }
     
@@ -134,7 +135,7 @@ class ChatViewController: UIViewController ,UITextViewDelegate{
     
     func textViewDidChange(_ textView: UITextView) {
         if(textFeild.text!.isEmpty == true){
-            self.sendButton.setImage(#imageLiteral(resourceName: "microphone-black-shape"), for: .normal)
+            self.sendButton.setImage(#imageLiteral(resourceName: "microphone"), for: .normal)
         }else{
             if(AppLanguage.currentLanguage().contains("ar")){
                 self.sendButton.setImage(#imageLiteral(resourceName: "send"), for: .normal)
@@ -174,18 +175,18 @@ class ChatViewController: UIViewController ,UITextViewDelegate{
       //  self.AddImageAlert()
     }
     
-    @IBAction func addAdresAction(_ sender: Any) {
-        self.dismissKeyboard()
-        self.optionView.isHidden = true
-        let vc = Storyboard.Main.viewController(SendTreatmentVC.self)
-        
-        vc.userId = reciverId
-        vc.roomId = roomID
-        vc.isComeFromChat = true
-        vc.isComeFromMore = false
-       
-        self.navigationController?.pushViewController(vc, animated: true)
-    }
+   @IBAction func addAdresAction(_ sender: Any) {
+//        self.dismissKeyboard()
+//        self.optionView.isHidden = true
+//        let vc = Storyboard.Main.viewController(SendTreatmentVC.self)
+//
+//        vc.userId = reciverId
+//        vc.roomId = roomID
+//        vc.isComeFromChat = true
+//        vc.isComeFromMore = false
+//
+//        self.navigationController?.pushViewController(vc, animated: true)
+  }
     
 }
 
@@ -222,14 +223,13 @@ extension ChatViewController: AVAudioRecorderDelegate {
                     let data = value["data"] as? [String:Any]
                     let url = data!["url"] as? String
                     let name = data!["name"] as? String
-                    // self.Massges[self.Massges.count - 1].content = url!
+//                     self.Massges[self.Massges.count - 1].content = url!
                     print("💙\(url)")
-
                     self.tableView.reloadData()
                   
                     self.Prisnter.sendMessages(message: name!, type: "sound")
 //                    SocketConnection.sharedInstance.socket.emit("send-file", test)
-                    self.tableView.reloadData()
+                    self.FeatchData()
                    // self.GetLastMassge()
                     self.recorder = nil
                 }

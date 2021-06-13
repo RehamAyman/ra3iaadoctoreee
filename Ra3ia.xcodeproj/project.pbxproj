@@ -213,6 +213,7 @@
 		CE8A8AAD2610A5CE005EABEF /* notificationVc+presenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A8AAC2610A5CE005EABEF /* notificationVc+presenterDelegate.swift */; };
 		CE8A8AB12610A5FC005EABEF /* NotificationVC+tableview.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A8AB02610A5FC005EABEF /* NotificationVC+tableview.swift */; };
 		CE8A8AB42610A61D005EABEF /* NotificatonPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A8AB32610A61D005EABEF /* NotificatonPresenter.swift */; };
+		CE9341882675E61A00D8D87D /* SelectLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE9341872675E61A00D8D87D /* SelectLocationViewController.swift */; };
 		CE966DB02671AD1500D0B602 /* addClientRate+presenterDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE966DAF2671AD1500D0B602 /* addClientRate+presenterDelegate.swift */; };
 		CE966DB32671AD2E00D0B602 /* addClientRatePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE966DB22671AD2E00D0B602 /* addClientRatePresenter.swift */; };
 		CE966E0A2671EEDF00D0B602 /* updateProfileModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE966E092671EEDF00D0B602 /* updateProfileModel.swift */; };
@@ -432,6 +433,7 @@
 		CE8A8AAC2610A5CE005EABEF /* notificationVc+presenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "notificationVc+presenterDelegate.swift"; sourceTree = "<group>"; };
 		CE8A8AB02610A5FC005EABEF /* NotificationVC+tableview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationVC+tableview.swift"; sourceTree = "<group>"; };
 		CE8A8AB32610A61D005EABEF /* NotificatonPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificatonPresenter.swift; sourceTree = "<group>"; };
+		CE9341872675E61A00D8D87D /* SelectLocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectLocationViewController.swift; sourceTree = "<group>"; };
 		CE966DAF2671AD1500D0B602 /* addClientRate+presenterDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "addClientRate+presenterDelegate.swift"; sourceTree = "<group>"; };
 		CE966DB22671AD2E00D0B602 /* addClientRatePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = addClientRatePresenter.swift; sourceTree = "<group>"; };
 		CE966E092671EEDF00D0B602 /* updateProfileModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = updateProfileModel.swift; sourceTree = "<group>"; };
@@ -828,6 +830,7 @@
 		CE3F2B72266E4F8C003F41A6 /* ChatVC */ = {
 			isa = PBXGroup;
 			children = (
+				CE9341862675E5BD00D8D87D /* selectLocation */,
 				CE3F2B73266E4F8C003F41A6 /* CahsAlertViewController.swift */,
 				CE3F2B74266E4F8C003F41A6 /* ChatViewController.swift */,
 				CE3F2B75266E4F8C003F41A6 /* AddImagePrsenter.swift */,
@@ -1202,6 +1205,14 @@
 			path = Notifications;
 			sourceTree = "<group>";
 		};
+		CE9341862675E5BD00D8D87D /* selectLocation */ = {
+			isa = PBXGroup;
+			children = (
+				CE9341872675E61A00D8D87D /* SelectLocationViewController.swift */,
+			);
+			path = selectLocation;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1478,6 +1489,7 @@
 				96688F052625B212001FD445 /* AboutAppVC+Prsenter.swift in Sources */,
 				CE8075C82607FC1F001B4558 /* HomeVC.swift in Sources */,
 				CE8A8AAD2610A5CE005EABEF /* notificationVc+presenterDelegate.swift in Sources */,
+				CE9341882675E61A00D8D87D /* SelectLocationViewController.swift in Sources */,
 				CE550065260A29E7005AB2AD /* editRecipesPresenter.swift in Sources */,
 				CE8075BE2607DF54001B4558 /* MoreVC+tabelview.swift in Sources */,
 				96C0F8DC266ADBC3009DD25A /* temp.swift in Sources */,

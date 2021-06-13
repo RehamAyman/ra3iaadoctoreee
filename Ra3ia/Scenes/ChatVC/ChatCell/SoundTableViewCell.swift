@@ -57,9 +57,18 @@ class SoundTableViewCell: UITableViewCell ,SoundCellView{
     }
     
     func setContent(msg: String) {
-        let videoUrl = NSURL(string: msg)
-        let avPlayer = AVPlayer(url: videoUrl! as URL)
-        self.playerView.playerLayer.player = avPlayer
+        if(msg.contains("https")){
+            let videoUrl = NSURL(string: msg)
+            let avPlayer = AVPlayer(url: videoUrl! as URL)
+            self.playerView.playerLayer.player = avPlayer
+
+        }else{
+            let videoUrl = NSURL(string: "https://raaia.4hoste.com/assets/uploads/chat/\(msg)")
+            let avPlayer = AVPlayer(url: videoUrl! as URL)
+            self.playerView.playerLayer.player = avPlayer
+
+        }
+       
         
     }
     

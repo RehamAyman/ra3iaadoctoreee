@@ -10,12 +10,30 @@ import Foundation
 import AVKit
 import SKActivityIndicatorView
 import PopMenu
+import CoreLocation
 
 
-extension ChatViewController:ChatView
+extension ChatViewController:ChatView , sendDataBackDelegate
 
 
 {
+    func finishPassing(location: String, lat: Double, lng: Double) {
+        let l = LocationMapModel(lat: lat, addresse: location, lang: lng)
+        let activitesData = try? JSONSerialization.data(withJSONObject: l.toDic(), options: [])
+        let activitiesDataJson = String(data: activitesData!, encoding: String.Encoding.utf8)
+        Prisnter.sendMessages(message: activitiesDataJson!, type: "map")
+    }
+    
+    
+    
+    func goToLoctionDetils(lat:Double,lng:Double){
+        let coordinate = CLLocationCoordinate2DMake(lat,lng)
+        if (UIApplication.shared.canOpenURL(URL(string:"https://")!)) {
+            UIApplication.shared.open(URL(string:"https://maps.google.com//?saddr=\(coordinate.latitude),\(coordinate.longitude)&daddr=&directionsmode=transit")!, options: [:], completionHandler: nil)
+        } else {
+            print("Can't use comgooglemaps://")
+        }
+    }
  
     func gotoClientRatePage() {
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5 ){
@@ -44,7 +62,7 @@ extension ChatViewController:ChatView
             
           
             
-            self.dismiss(animated: true, completion: nil)
+         //   self.dismiss(animated: true, completion: nil)
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3 ){
                 
@@ -60,8 +78,18 @@ extension ChatViewController:ChatView
             }
      
         
+        let action4 = PopMenuDefaultAction(title: "send location".localized, image: UIImage(named: "eye")) { (acion) in
+          
+           
+            let vc = Storyboard.Main.viewController(SelectLocationViewController.self)
+            vc.delegate = self
+            self.navigationController?.pushViewController(vc, animated: true)
+            
+            }
+     
+        
         // send tratment
-        let action2 = PopMenuDefaultAction(title: "Send a treatment".localized , image: UIImage(named: "attach")) { (action) in
+        let action2 = PopMenuDefaultAction(title: "Send a treatment".localized , image: UIImage(named: "eye")) { (action) in
              
             DispatchQueue.main.asyncAfter(deadline: .now() + 0.3 ){
                 
@@ -85,7 +113,7 @@ extension ChatViewController:ChatView
             }
         
       
-        let action3 =  PopMenuDefaultAction(title: "Finish chat".localized , image: UIImage(named: "chatt")) { (action) in
+        let action3 =  PopMenuDefaultAction(title: "Finish chat".localized , image: UIImage(named: "eye")) { (action) in
             
             
             SocketConnection.sharedInstance.socket.off("newMessage")
@@ -103,6 +131,8 @@ extension ChatViewController:ChatView
             manager.addAction(action1)
             manager.addAction(action2)
             manager.addAction(action3)
+            manager.addAction(action4)
+        
            
     
       
@@ -178,7 +208,10 @@ extension ChatViewController:ChatView
     }
     func setChatData(data: ChatData) {
         self.reciverId = data.receiverID
-       
+        
+        self.chatname.text = data.receiverName
+        
+        
        // self.userName.text = data.receiverName
      //   self.userImage.setImageWith(data.receiverAvatar)
         //self.userPrice.text =  data.delivery_price + " " + "SR".localized
@@ -187,7 +220,7 @@ extension ChatViewController:ChatView
       //  self.orderStatus.clipsToBounds = true
        // self.orderID.text = "#  " +  String(data.id)
         //self.phonNumber = data.re
-    //    UserChatData = data
+      UserChatData = data
 //        if(data.order  == "intercity_delivery"){
 //            self.orderDataStack.isHidden = false
 //        }else{
@@ -260,6 +293,7 @@ extension ChatViewController:ChatView
         
     }
     
+    
     func setSessionPlayAndRecord() {
         print("\(#function)")
         
@@ -285,3 +319,7 @@ extension ChatViewController:ChatView
     
     
 }
+
+    
+    
+
